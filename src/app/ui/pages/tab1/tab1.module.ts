@@ -9,6 +9,7 @@ import { MatStepperModule } from '@angular/material/stepper';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { CoreModule } from 'src/app/core/core.module';
 import { RouterModule } from '@angular/router';
+import { HeaderComponent } from '../../components/header/header.component';
 
 @NgModule({
   imports: [
@@ -23,6 +24,6 @@ import { RouterModule } from '@angular/router';
     MatFormFieldModule,
     RouterModule.forChild([{ path: '', component: Tab1Page }]),
   ],
-  declarations: [Tab1Page],
+  declarations: [Tab1Page, HeaderComponent],
 })
 export class Tab1PageModule {}

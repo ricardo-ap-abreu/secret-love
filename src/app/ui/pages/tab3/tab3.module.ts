@@ -10,6 +10,7 @@ import { CoreModule } from '@angular/flex-layout';
 import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatStepperModule } from '@angular/material/stepper';
+import { HeaderComponent } from '../../components/header/header.component';
 
 @NgModule({
   imports: [
@@ -24,6 +25,6 @@ import { MatStepperModule } from '@angular/material/stepper';
     RouterModule.forChild([{ path: '', component: Tab3Page }]),
     Tab3PageRoutingModule,
   ],
-  declarations: [Tab3Page],
+  declarations: [Tab3Page, HeaderComponent],
 })
 export class Tab3PageModule {}
